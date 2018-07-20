@@ -1,106 +1,133 @@
-body {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background-color: #19181d;
+body
+{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #19181d;
 }
 
-.circle {
-  position: absolute;
-  top: 20%;
-  left: 35%;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: linear-gradient(#313247 0%, #19181d 30%);
+.circle
+{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#313247), color-stop(30%, #19181d));
+    background: -webkit-linear-gradient(#313247 0%, #19181d 30%);
+    background:      -o-linear-gradient(#313247 0%, #19181d 30%);
+    background:         linear-gradient(#313247 0%, #19181d 30%);
 }
 
-.circle:before, .circle:after {
-  position: absolute;
-  z-index: -1;
-  top: 42%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  content: '';
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: linear-gradient(#ffd1da 0%, #ff849d 5%, #2d2133 25%);
-  -webkit-filter: blur(7px);
+.circle:before,
+.circle:after
+{
+    position: absolute;
+    z-index: -1;
+    top: 42%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    content: '';
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffd1da), color-stop(5%, #ff849d), color-stop(25%, #2d2133));
+    background: -webkit-linear-gradient(#ffd1da 0%, #ff849d 5%, #2d2133 25%);
+    background:      -o-linear-gradient(#ffd1da 0%, #ff849d 5%, #2d2133 25%);
+    background:         linear-gradient(#ffd1da 0%, #ff849d 5%, #2d2133 25%);
+    -webkit-filter: blur(7px);
 }
 
-.circle:after {
-  top: 35%;
-  width: 415px;
-  opacity: .3;
-  -webkit-filter: blur(14px);
+.circle:after
+{
+    top: 35%;
+    width: 415px;
+    opacity: .3;
+    -webkit-filter: blur(14px);
 }
 
-.msg {
-  font-family: sans-serif;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50.68%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 30.5px;
-  text-transform: uppercase;
-  color: white;
+.msg
+{
+    font-family: sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50.68%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    letter-spacing: 30.5px;
+    text-transform: uppercase;
+    color: white;
 }
 
-.notify {
-  font-family: sans-serif;
-  font-size: 16px;
-  position: absolute;
-  bottom: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffd1da;
+.notify
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffd1da;
 }
 
-.field {
-  position: absolute;
-  bottom: 8%;
-  left: 54%;
-  transform: translateX(-50%);
+.field
+{
+    position: absolute;
+    bottom: 8%;
+    left: 54%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
-.field input {
-  font-family: sans-serif;
-  font-size: 10px;
-  width: 300px;
-  height: 35px;
-  margin-bottom: 10px;
-  padding-left: 15px;
-  letter-spacing: 1px;
-  color: white;
-  border: none;
-  border-radius: 35px;
-  outline: none;
-  background-color: #101113;
+.field input
+{
+    font-family: sans-serif;
+    font-size: 10px;
+    width: 300px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+    background-color: #101113;
 }
 
-.field button {
-  font-family: sans-serif;
-  font-size: 11px;
-  position: relative;
-  z-index: 999;
-  left: -100px;
-  width: 100px;
-  height: 35px;
-  cursor: pointer;
-  transition: all 1s ease;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: white;
-  border: none;
-  border-radius: 35px;
-  outline: none;
-  background-color: #2e2d45;
+.field button
+{
+    font-family: sans-serif;
+    font-size: 11px;
+    position: relative;
+    z-index: 999;
+    left: -100px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+         -o-transition: all 1s ease;
+            transition: all 1s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+    background-color: #2e2d45;
 }
 
-.field button:hover {
-  background-color: #945261;
+.field button:hover
+{
+    background-color: #945261;
 }
