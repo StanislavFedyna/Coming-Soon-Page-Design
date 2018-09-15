@@ -20,8 +20,8 @@ h1
     font-size: 42px;
     font-weight: bold;
     position: absolute;
-    top: 50%;
-    left: 30%;
+    top: 40%;
+    left: 46%;
     padding: .4em 1em;
     -webkit-transform: translate(-50%, -50%);
        -moz-transform: translate(-50%, -50%);
@@ -96,8 +96,12 @@ h1
 
 #secondElement
 {
-    top: 63%;
-    left: 40%;
+     top: 51%;
+     left: 58%;
+}
+#secondElement .sign
+{
+color: #88001b;
 }
 
 #secondElement span
