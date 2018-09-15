@@ -69,3 +69,28 @@ h1{
   }
 }
 
+@keyframes appear-text{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+#secondElement{
+  top: 63%;
+  left: 40%;
+}
+
+#secondElement span{
+  animation-delay: 2s;
+}
+
+#secondElement.rev-block:after{
+  background: #5e239d;
+  animation-delay: 1.4s;
+
+}
+
