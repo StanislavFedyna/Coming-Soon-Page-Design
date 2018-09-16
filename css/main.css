@@ -16,7 +16,8 @@ body
 
 h1
 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 3px;
     font-size: 42px;
     font-weight: bold;
     position: absolute;
@@ -101,7 +102,8 @@ h1
 }
 #secondElement .sign
 {
-color: #88001b;
+color: #D14DBD;
+font-family: serif;
 }
 
 #secondElement span
